@@ -42,10 +42,8 @@ services:
       POSTGRES_USER: blinko
       POSTGRES_PASSWORD: ${PG_PASS}
       TZ: Pacific/Auckland
-      # Persisting container data
-      # Make sure you have enough permissions.
     volumes:
-      - /data/blinko/postgres/:/var/lib/postgresql/data
+      - postgres/:/var/lib/postgresql/data
     healthcheck:
       test:
         - CMD
