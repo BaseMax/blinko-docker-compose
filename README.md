@@ -61,13 +61,13 @@ Edit `.env` using your credentials or secrets.
 ### 3. Start the stack
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 To stop:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ---
