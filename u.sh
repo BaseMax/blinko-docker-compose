@@ -8,7 +8,7 @@ echo "Docker and Docker Compose updated."
 mkdir -p data
 mkdir -p postgres
 
-docker compose down --volumes --remove-orphans
+# docker compose down --volumes --remove-orphans
 
 docker compose up -d --build
 

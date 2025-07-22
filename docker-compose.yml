@@ -14,6 +14,8 @@ services:
         condition: service_healthy
     volumes:
       - ./data:/app/.blinko
+    ports:
+      - "1111:1111"
     logging:
       options:
         max-size: 10m
