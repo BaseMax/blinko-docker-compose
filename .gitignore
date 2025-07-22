@@ -7,3 +7,5 @@ postgres
 postgres/*
 postgres/**
 !postgres/.keep
+
+.env
