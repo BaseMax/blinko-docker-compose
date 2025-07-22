@@ -43,7 +43,7 @@ services:
       POSTGRES_PASSWORD: ${PG_PASS}
       TZ: Pacific/Auckland
     volumes:
-      - postgres/:/var/lib/postgresql/data
+      - ./postgres:/var/lib/postgresql/data
     healthcheck:
       test:
         - CMD
