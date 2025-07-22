@@ -13,9 +13,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      # Make sure you have enough permissions.
     volumes:
-      - /data/blinko/app:/app/.blinko
+      - data:/app/.blinko
     logging:
       options:
         max-size: 10m
