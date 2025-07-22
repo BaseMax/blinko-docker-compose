@@ -25,7 +25,6 @@ blinko-docker-compose/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
 ````
 
 ---
