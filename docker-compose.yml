@@ -13,7 +13,7 @@ services:
       postgres:
         condition: service_healthy
     volumes:
-      - data:/app/.blinko
+      - ./data:/app/.blinko
     logging:
       options:
         max-size: 10m
