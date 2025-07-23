@@ -5,8 +5,8 @@ services:
     container_name: blinko-website
     environment:
       NODE_ENV: production
-      NEXTAUTH_URL: https://domain.name
-      NEXT_PUBLIC_BASE_URL: domain.name
+      NEXT_PUBLIC_BASE_URL: ${DOMAIN}
+      NEXTAUTH_URL: ${NEXTAUTH_URL}
       NEXTAUTH_SECRET: ${NEXT_AUTH}
       DATABASE_URL: postgresql://blinko:${PG_PASS}@postgres:5432/blinko
     depends_on:
@@ -41,7 +41,7 @@ services:
       POSTGRES_DB: blinko
       POSTGRES_USER: blinko
       POSTGRES_PASSWORD: ${PG_PASS}
-      TZ: Pacific/Auckland
+      TZ: Europe/Amsterdam
     volumes:
       - ./postgres:/var/lib/postgresql/data
     healthcheck:
